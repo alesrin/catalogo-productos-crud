@@ -1,0 +1,57 @@
+/* Contenedor del formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f9fc; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Estilo de etiquetas */
+  label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilo de los campos de entrada */
+  input[type="text"],
+  input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d1d9e6;
+    border-radius: 5px; 
+    background-color: #ffffff; 
+    transition: border-color 0.3s;
+  }
+  
+  /* Efecto de enfoque en los campos de entrada */
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    border-color: #a3b4cc; /* Color de borde al enfocar */
+    outline: none;
+  }
+  
+  /* Estilo del botón */
+  button[type="submit"] {
+    background-color: #4a90e2; /* Color principal del botón */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  /* Efecto al pasar el ratón sobre el botón */
+  button[type="submit"]:hover {
+    background-color: #357abd; /* Color al pasar el ratón */
+  }

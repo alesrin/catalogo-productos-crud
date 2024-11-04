@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Gestión de Productos</h2>
+  
+    <!-- Componente de formulario para añadir o editar productos -->
+    <app-product-form 
+      [producto]="productoParaEditar" 
+      (guardar)="resetearProductoParaEditar()">
+    </app-product-form>
+  
+    <h3>Lista de Productos</h3>
+    <ul>
+      <li *ngFor="let producto of productos" type="none">
+        <app-product-item 
+          [producto]="producto"
+          (editar)="editarProducto($event)"
+          (eliminar)="eliminarProducto($event)">
+        </app-product-item>
+      </li>
+    </ul>
+  </div>
+  

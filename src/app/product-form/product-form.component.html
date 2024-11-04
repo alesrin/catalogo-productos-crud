@@ -1,0 +1,15 @@
+<!-- src/app/product-form/product-form.component.html -->
+
+<form (ngSubmit)="onSubmit()">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" [(ngModel)]="productoActual.nombre" name="nombre" required />
+  
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" [(ngModel)]="productoActual.precio" name="precio" required />
+  
+    <label for="categoria">Categoría:</label>
+    <input type="text" id="categoria" [(ngModel)]="productoActual.categoria" name="categoria" required />
+  
+    <button type="submit">{{ productoActual.id ? 'Actualizar Producto' : 'Añadir Producto' }}</button>
+  </form>
+  

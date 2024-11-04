@@ -1,0 +1,11 @@
+/* Estilos generales para la aplicación */
+body {
+    font-family: Arial, sans-serif; /* Fuente para todo el cuerpo */
+    background-color: #f4f4f4; /* Color de fondo */
+    padding: 20px; /* Espaciado interior */
+  }
+  
+  h1 {
+    text-align: center; /* Centrar el título */
+    color: #333; /* Color del texto del título */
+  }
